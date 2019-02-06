@@ -3,3 +3,10 @@ const ctx = canvas.getContext("2d");
 const scale = 10;
 const rows = canvas.height/scale;
 const column = canvas.width/scale;
+
+var snake;
+
+(function setup(){
+    snake = new Snake();
+    snake.draw();
+}());
